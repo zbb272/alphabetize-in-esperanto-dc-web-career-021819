@@ -11,7 +11,7 @@ def alphabetize(arr)
   
   arr.each do | word | 
     arr_hash[word] = []
-    word.each do | letter |
+    word.chars.each do | letter |
       arr_hash[word] << alphabet_hash[letter]
     end 
   end 
