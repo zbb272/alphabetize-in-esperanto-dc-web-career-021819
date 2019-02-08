@@ -1,8 +1,8 @@
 def alphabetize(arr)
-  ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+  alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   
   alphabet_hash = {}
-  ALPHABET.each_with_index do | letter, index |
+  alphabet.each_with_index do | letter, index |
     alphabet_hash[letter] = index + 1 
   end 
   alphabet_hash[" "] = 0 
