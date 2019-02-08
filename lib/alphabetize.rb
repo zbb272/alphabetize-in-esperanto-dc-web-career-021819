@@ -1,8 +1,14 @@
 def alphabetize(arr)
-  ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+  ALPHABET = "abcĉdefgĝ h  ĥ  i  j  ĵ  k  l  m  n  o  p  rsŝtuŭvz"
+             "123456789 10 11 12 13 14 15 16 17 18 19 20"
   arr_hash = {}
   
-  arr.each_with_index do | word | 
+  arr_hash = {
+    "mi amas vin" => [17, 12, 0, 1, ],
+    "bonan matenon" => 
+  }
+  
+  arr.each do | word | 
     word.each
   end 
   
