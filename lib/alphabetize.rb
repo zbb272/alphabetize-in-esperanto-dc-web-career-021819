@@ -22,7 +22,7 @@ def alphabetize(arr)
   end 
   
   arr.sort_by do | word | 
-    
+    arr_hash[word]
   end 
   
 end
