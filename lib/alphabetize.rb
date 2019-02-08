@@ -9,11 +9,6 @@ def alphabetize(arr)
   
   arr_hash = {}
   
-  arr_hash = {
-    "mi amas vin" => [17, 12, 0, 1, ],
-    "bonan matenon" => 
-  }
-  
   arr.each do | word | 
     arr_hash[word] = []
     word.each do | letter |
