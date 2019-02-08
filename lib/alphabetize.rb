@@ -1,6 +1,12 @@
 def alphabetize(arr)
   ALPHABET = "abcĉdefgĝ h  ĥ  i  j  ĵ  k  l  m  n  o  p  rsŝtuŭvz"
              "123456789 10 11 12 13 14 15 16 17 18 19 20"
+  alphabet_hash = {}
+  ALPHABET.each_with_index do | letter, index |
+    alphabet_hash[letter] = index + 1 
+  end 
+  alphabet_hash[" "] = 0 
+  
   arr_hash = {}
   
   arr_hash = {
@@ -9,7 +15,10 @@ def alphabetize(arr)
   }
   
   arr.each do | word | 
-    word.each
+    arr_hash[word] = []
+    word.each do | letter |
+      arr_hash[word] << alphabet_hash[letter]
+    end 
   end 
   
   arr.sort_by do | word | 
