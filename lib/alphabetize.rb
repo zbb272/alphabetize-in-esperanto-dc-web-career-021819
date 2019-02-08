@@ -1,6 +1,6 @@
 def alphabetize(arr)
-  ALPHABET = "abcĉdefgĝ h  ĥ  i  j  ĵ  k  l  m  n  o  p  rsŝtuŭvz"
-             "123456789 10 11 12 13 14 15 16 17 18 19 20"
+  ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+  
   alphabet_hash = {}
   ALPHABET.each_with_index do | letter, index |
     alphabet_hash[letter] = index + 1 
